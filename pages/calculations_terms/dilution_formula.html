@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dilution Formula Calculator - Chemxplore</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../js/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>Chem<span>xplore</span></h1>
+                    <p>Mole Concept</p>
+                </div>
+                <nav>
+                    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+                    <ul>
+                        <li><a href="../../index.html">Home</a></li>
+                        <li><a href="index.html">Terms</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="theory-content">
+                <h2>Dilution Formula Calculator</h2>
+
+                <h3>The Dilution Formula</h3>
+                <p>When a concentrated solution is diluted by adding more solvent, the concentration changes but the total amount of solute remains the same. This relationship is expressed by the dilution formula:</p>
+                <div class="formula">
+                    M₁V₁ = M₂V₂
+                </div>
+
+                <h4>Where:</h4>
+                <ul>
+                    <li><strong>M₁</strong> = Initial concentration (M)</li>
+                    <li><strong>V₁</strong> = Initial volume (L)</li>
+                    <li><strong>M₂</strong> = Final concentration (M)</li>
+                    <li><strong>V₂</strong> = Final volume (L)</li>
+                </ul>
+
+                <h3>How to Use</h3>
+                <p>Enter known values and leave the unknown variable blank. The calculator will solve for the missing variable.</p>
+
+                <div class="highlight">
+                    <strong>Note:</strong> All volumes must be in the same units (usually liters) and concentrations in molarity (M).
+                </div>
+            </div>
+
+            <div class="calculator">
+                <h2>Dilution Calculator</h2>
+
+                <form onsubmit="event.preventDefault(); calculateDilution();">
+                    <div class="form-group">
+                        <label for="m1">Initial Concentration (M₁):</label>
+                        <input type="number" id="m1" step="any" placeholder="Leave blank to solve for M₁">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="v1">Initial Volume (V₁ in L):</label>
+                        <input type="number" id="v1" step="any" placeholder="Leave blank to solve for V₁">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="m2">Final Concentration (M₂):</label>
+                        <input type="number" id="m2" step="any" placeholder="Leave blank to solve for M₂">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="v2">Final Volume (V₂ in L):</label>
+                        <input type="number" id="v2" step="any" placeholder="Leave blank to solve for V₂">
+                    </div>
+
+                    <button type="submit" class="btn">Calculate</button>
+                </form>
+
+                <div id="result"></div>
+            </div>
+
+            <div class="theory-content">
+                <h3>Examples</h3>
+                <ul>
+                    <li><strong>Example 1:</strong> How much water to add to 100 mL of 2M HCl to make 0.5M solution?<br>
+                        M₁ = 2M, V₁ = 0.1L, M₂ = 0.5M, V₂ = ?<br>
+                        V₂ = (2 × 0.1) ÷ 0.5 = 0.4 L (add 0.3 L water)</li>
+                    <li><strong>Example 2:</strong> What is the concentration of 500 mL solution made from 50 mL of 3M NaOH?<br>
+                        M₁ = 3M, V₁ = 0.05L, V₂ = 0.5L, M₂ = ?<br>
+                        M₂ = (3 × 0.05) ÷ 0.5 = 0.3 M</li>
+                    <li><strong>Example 3:</strong> What volume of 6M HCl is needed to make 2L of 1.5M solution?<br>
+                        M₁ = 6M, M₂ = 1.5M, V₂ = 2L, V₁ = ?<br>
+                        V₁ = (1.5 × 2) ÷ 6 = 0.5 L</li>
+                </ul>
+
+                <h3>Important Notes</h3>
+                <ul>
+                    <li>The dilution formula assumes the volumes are additive</li>
+                    <li>Temperature should be constant during dilution</li>
+                    <li>This formula applies to molar concentrations</li>
+                    <li>For very concentrated solutions, volume changes may occur</li>
+                </ul>
+
+                <h3>Practical Applications</h3>
+                <ul>
+                    <li>Preparing solutions of desired concentrations in labs</li>
+                    <li>Serial dilution techniques in microbiology</li>
+                    <li>Medicine dosage calculations</li>
+                    <li>Industrial chemical processing</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Chemxplore. All rights reserved. | <a href="../../index.html">Back to Home</a></p>
+        </div>
+    </footer>
+</body>
+</html>
