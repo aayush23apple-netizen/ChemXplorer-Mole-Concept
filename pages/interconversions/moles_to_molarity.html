@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moles to Molarity Calculator - Chemxplore</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../js/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>Chem<span>xplore</span></h1>
+                    <p>Mole Concept</p>
+                </div>
+                <nav>
+                    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+                    <ul>
+                        <li><a href="../../index.html">Home</a></li>
+                        <li><a href="index.html">Interconversions</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="theory-content">
+                <h2>Moles to Molarity Calculator</h2>
+                <p>This calculator converts moles and volume to molarity: <strong>molarity = moles ÷ volume (in L)</strong></p>
+
+                <h3>How it works:</h3>
+                <ol>
+                    <li>Enter the number of moles of solute</li>
+                    <li>Enter the volume of solution in liters</li>
+                    <li>The calculator computes the molar concentration</li>
+                </ol>
+
+                <div class="formula">
+                    Molarity (M) = moles of solute ÷ volume of solution (L)
+                </div>
+            </div>
+
+            <div class="calculator">
+                <h2>Calculate Molarity from Moles and Volume</h2>
+
+                <form onsubmit="event.preventDefault(); calculateMolesToMolarity();">
+                    <div class="form-group">
+                        <label for="moles">Moles of solute:</label>
+                        <input type="number" id="moles" step="any" required placeholder="Enter moles of solute">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="volume">Volume of solution (liters):</label>
+                        <input type="number" id="volume" step="any" required placeholder="Enter volume in liters">
+                    </div>
+
+                    <button type="submit" class="btn">Calculate Molarity</button>
+                </form>
+
+                <div id="result"></div>
+            </div>
+
+            <div class="theory-content">
+                <h3>Examples</h3>
+                <ul>
+                    <li><strong>Example 1:</strong> Calculate molarity of 1 mole NaCl in 1 L solution<br>
+                        molarity = 1 ÷ 1 = 1 M</li>
+                    <li><strong>Example 2:</strong> Calculate molarity of 0.5 moles HCl in 2 L solution<br>
+                        molarity = 0.5 ÷ 2 = 0.25 M</li>
+                    <li><strong>Example 3:</strong> Calculate molarity of 2 moles NaOH in 0.5 L solution<br>
+                        molarity = 2 ÷ 0.5 = 4 M</li>
+                </ul>
+
+                <h3>Important Notes</h3>
+                <ul>
+                    <li>Molarity is temperature-dependent</li>
+                    <li>Volume must be in liters</li>
+                    <li>Molarity (M) = mol/L</li>
+                    <li>This gives the concentration of the solution</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Chemxplore. All rights reserved. | <a href="../../index.html">Back to Home</a></p>
+        </div>
+    </footer>
+</body>
+</html>
