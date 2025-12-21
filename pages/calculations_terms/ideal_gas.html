@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ideal Gas Law Calculator - Chemxplore</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../js/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>Chem<span>xplore</span></h1>
+                    <p>Mole Concept</p>
+                </div>
+                <nav>
+                    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+                    <ul>
+                        <li><a href="../../index.html">Home</a></li>
+                        <li><a href="index.html">Terms</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="theory-content">
+                <h2>Ideal Gas Law Calculator</h2>
+
+                <h3>The Ideal Gas Law</h3>
+                <p>The ideal gas law combines Boyle's law, Charles's law, and Avogadro's law into a single equation:</p>
+                <div class="formula">
+                    PV = nRT
+                </div>
+
+                <h4>Where:</h4>
+                <ul>
+                    <li><strong>P</strong> = pressure (atm)</li>
+                    <li><strong>V</strong> = volume (L)</li>
+                    <li><strong>n</strong> = number of moles</li>
+                    <li><strong>R</strong> = gas constant (0.0821 L·atm·mol⁻¹·K⁻¹)</li>
+                    <li><strong>T</strong> = temperature (K)</li>
+                </ul>
+
+                <h3>How to Use</h3>
+                <p>Enter known values and leave the unknown variable blank. The calculator will solve for the missing variable.</p>
+
+                <div class="highlight">
+                    <strong>Note:</strong> Temperature must be in Kelvin (K). Convert Celsius to Kelvin by adding 273.15.
+                </div>
+            </div>
+
+            <div class="calculator">
+                <h2>Ideal Gas Law Calculator</h2>
+
+                <form onsubmit="event.preventDefault(); calculateIdealGas();">
+                    <div class="form-group">
+                        <label for="pressure">Pressure (atm):</label>
+                        <input type="number" id="pressure" step="any" placeholder="Leave blank to solve for P">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="volume">Volume (L):</label>
+                        <input type="number" id="volume" step="any" placeholder="Leave blank to solve for V">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="moles">Moles (n):</label>
+                        <input type="number" id="moles" step="any" placeholder="Leave blank to solve for n">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="temperature">Temperature (K):</label>
+                        <input type="number" id="temperature" step="any" placeholder="Leave blank to solve for T">
+                    </div>
+
+                    <button type="submit" class="btn">Calculate</button>
+                </form>
+
+                <div id="result"></div>
+            </div>
+
+            <div class="theory-content">
+                <h3>Examples</h3>
+                <ul>
+                    <li><strong>Example 1:</strong> Calculate volume of 2 moles of gas at 298K and 1 atm<br>
+                        V = (2 × 0.0821 × 298) ÷ 1 = 48.9 L</li>
+                    <li><strong>Example 2:</strong> Calculate moles in 10L at 2 atm and 273K<br>
+                        n = (2 × 10) ÷ (0.0821 × 273) = 0.89 moles</li>
+                    <li><strong>Example 3:</strong> Calculate temperature of 1 mole gas at 5L and 3 atm<br>
+                        T = (3 × 5) ÷ (1 × 0.0821) = 183 K</li>
+                </ul>
+
+                <h3>Common Conversions</h3>
+                <ul>
+                    <li>Temperature: °C + 273.15 = K</li>
+                    <li>Pressure: 1 atm = 760 mmHg = 101.325 kPa</li>
+                    <li>Volume: 1 L = 1000 mL = 0.001 m³</li>
+                </ul>
+
+                <h3>Limitations</h3>
+                <p>The ideal gas law is most accurate at:</p>
+                <ul>
+                    <li>High temperatures</li>
+                    <li>Low pressures</li>
+                    <li>Non-polar molecules</li>
+                    <li>Point masses (no volume)</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Chemxplore. All rights reserved. | <a href="../../index.html">Back to Home</a></p>
+        </div>
+    </footer>
+</body>
+</html>
