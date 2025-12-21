@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empirical Formula Calculator - Chemxplore</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../js/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>Chem<span>xplore</span></h1>
+                    <p>Mole Concept</p>
+                </div>
+                <nav>
+                    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+                    <ul>
+                        <li><a href="../../index.html">Home</a></li>
+                        <li><a href="index.html">Terms</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="theory-content">
+                <h2>Empirical Formula Calculator</h2>
+
+                <h3>What is Empirical Formula?</h3>
+                <p>The empirical formula is the simplest whole number ratio of atoms of each element in a compound. It shows the relative number of atoms of each element in the compound.</p>
+
+                <div class="highlight">
+                    <strong>Key Points:</strong>
+                    <br>• Simplest ratio of atoms
+                    <br>• May or may not be the same as molecular formula
+                    <br>• Based on experimental data (mass percentages or masses)
+                </div>
+
+                <h3>Calculation Steps</h3>
+                <ol>
+                    <li>Convert mass percentages to grams (assume 100g sample)</li>
+                    <li>Convert grams to moles using molar masses</li>
+                    <li>Divide by smallest number of moles</li>
+                    <li>Multiply by smallest integer to get whole numbers</li>
+                </ol>
+
+                <h3>Formula</h3>
+                <div class="formula">
+                    Empirical Formula = Simplest whole number ratio of atoms
+                </div>
+            </div>
+
+            <div class="calculator">
+                <h2>Empirical Formula Calculator</h2>
+
+                <form onsubmit="event.preventDefault(); calculateEmpiricalFormula();">
+                    <div class="form-group">
+                        <label for="elements">Elements (comma-separated):</label>
+                        <input type="text" id="elements" required placeholder="e.g., C,H,O">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="masses">Masses (comma-separated, grams):</label>
+                        <input type="text" id="masses" required placeholder="e.g., 40.0,6.7,53.3">
+                    </div>
+
+                    <button type="submit" class="btn">Calculate Empirical Formula</button>
+                </form>
+
+                <div id="result"></div>
+            </div>
+
+            <div class="theory-content">
+                <h3>Examples</h3>
+
+                <h4>Example 1: From Mass Percentages</h4>
+                <p>A compound contains 40.0% C, 6.7% H, and 53.3% O.</p>
+                <ol>
+                    <li>Assume 100g: 40.0g C, 6.7g H, 53.3g O</li>
+                    <li>Moles: C = 40.0/12 = 3.33, H = 6.7/1 = 6.7, O = 53.3/16 = 3.33</li>
+                    <li>Divide by 3.33: C = 1, H = 2, O = 1</li>
+                    <li>Empirical formula: CH₂O</li>
+                </ol>
+
+                <h4>Example 2: From Experimental Masses</h4>
+                <p>Analysis shows 2.40g C and 0.40g H in a compound.</p>
+                <ol>
+                    <li>Moles: C = 2.40/12 = 0.20, H = 0.40/1 = 0.40</li>
+                    <li>Divide by 0.20: C = 1, H = 2</li>
+                    <li>Empirical formula: CH₂</li>
+                </ol>
+
+                <h3>Important Notes</h3>
+                <ul>
+                    <li>Use atomic masses from the periodic table</li>
+                    <li>Round to appropriate significant figures</li>
+                    <li>If ratios are not whole numbers, multiply by a small integer</li>
+                    <li>Empirical formula may differ from molecular formula</li>
+                </ul>
+
+                <h3>Empirical vs Molecular Formula</h3>
+                <table style="width: 100%; border-collapse: collapse; margin: 1rem 0;">
+                    <tr style="background: #f8f9fa;">
+                        <th style="border: 1px solid #ddd; padding: 0.5rem;">Aspect</th>
+                        <th style="border: 1px solid #ddd; padding: 0.5rem;">Empirical Formula</th>
+                        <th style="border: 1px solid #ddd; padding: 0.5rem;">Molecular Formula</th>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid #ddd; padding: 0.5rem;">Definition</td>
+                        <td style="border: 1px solid #ddd; padding: 0.5rem;">Simplest ratio</td>
+                        <td style="border: 1px solid #ddd; padding: 0.5rem;">Actual number of atoms</td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid #ddd; padding: 0.5rem;">Example</td>
+                        <td style="border: 1px solid #ddd; padding: 0.5rem;">CH₂O</td>
+                        <td style="border: 1px solid #ddd; padding: 0.5rem;">C₆H₁₂O₆</td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid #ddd; padding: 0.5rem;">Molecular Weight</td>
+                        <td style="border: 1px solid #ddd; padding: 0.5rem;">30 g/mol</td>
+                        <td style="border: 1px solid #ddd; padding: 0.5rem;">180 g/mol</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Chemxplore. All rights reserved. | <a href="../../index.html">Back to Home</a></p>
+        </div>
+    </footer>
+</body>
+</html>
