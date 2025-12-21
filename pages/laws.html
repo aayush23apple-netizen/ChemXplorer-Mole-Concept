@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laws of Mole Concept - Chemxplore</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>Chem<span>xplore</span></h1>
+                    <p>Mole Concept</p>
+                </div>
+                <nav>
+                    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="#theory">Theory</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="theory-content">
+                <h2>Laws of Mole Concept</h2>
+
+                <p>The mole concept is built upon several fundamental laws that govern chemical behavior. These laws provide the theoretical foundation for understanding chemical reactions and stoichiometry.</p>
+
+                <h3>1. Avogadro's Law</h3>
+                <h4>Statement</h4>
+                <p>Equal volumes of all gases, at the same temperature and pressure, contain the same number of molecules.</p>
+
+                <h4>Mathematical Expression</h4>
+                <div class="formula">
+                    V ∝ n (at constant T and P)<br>
+                    V/n = constant
+                </div>
+
+                <h4>Derivation</h4>
+                <p>Consider two gases A and B at the same temperature and pressure:</p>
+                <ul>
+                    <li>Volume of gas A = V₁, Number of molecules = n₁</li>
+                    <li>Volume of gas B = V₂, Number of molecules = n₂</li>
+                </ul>
+                <p>According to kinetic theory, the volume occupied by gas molecules depends on their number and average distance between them. At constant T and P, the average kinetic energy is constant, so the volume depends only on the number of molecules.</p>
+                <div class="formula">
+                    V ∝ n<br>
+                    V₁/n₁ = V₂/n₂ = constant
+                </div>
+
+                <h4>Applications</h4>
+                <ul>
+                    <li>Determination of atomicity of gases</li>
+                    <li>Calculation of molecular masses</li>
+                    <li>Understanding gas reactions</li>
+                </ul>
+
+                <h3>2. Gay-Lussac's Law (Law of Combining Volumes)</h3>
+                <h4>Statement</h4>
+                <p>When gases react, they do so in volumes which bear a simple ratio to each other and to the volumes of the products, provided all volumes are measured at the same temperature and pressure.</p>
+
+                <h4>Examples</h4>
+                <ul>
+                    <li>H₂ + Cl₂ → 2HCl (1:1:2)</li>
+                    <li>2H₂ + O₂ → 2H₂O (2:1:2)</li>
+                    <li>N₂ + 3H₂ → 2NH₃ (1:3:2)</li>
+                </ul>
+
+                <h4>Derivation</h4>
+                <p>Based on Avogadro's law, equal volumes contain equal number of molecules. In the reaction H₂ + Cl₂ → 2HCl:</p>
+                <ul>
+                    <li>1 volume H₂ contains n molecules</li>
+                    <li>1 volume Cl₂ contains n molecules</li>
+                    <li>2 volumes HCl contain 2n molecules</li>
+                </ul>
+                <p>Since each HCl molecule contains 1 H atom and 1 Cl atom, and H₂ contains 2 H atoms, the ratio 1:1:2 makes sense.</p>
+
+                <h3>3. Law of Constant Proportion (Law of Definite Proportions)</h3>
+                <h4>Statement</h4>
+                <p>A chemical compound always contains the same elements in the same proportion by mass, regardless of its source or method of preparation.</p>
+
+                <h4>Examples</h4>
+                <ul>
+                    <li>Water (H₂O) always contains 11.11% hydrogen and 88.89% oxygen by mass</li>
+                    <li>Carbon dioxide (CO₂) always contains 27.27% carbon and 72.73% oxygen</li>
+                </ul>
+
+                <h4>Derivation</h4>
+                <p>Consider a compound formed by elements A and B. The mass ratio m_A:m_B is constant because:</p>
+                <ul>
+                    <li>Atoms combine in fixed ratios (law of multiple proportions)</li>
+                    <li>Each atom has a fixed mass</li>
+                    <li>The compound has a definite molecular formula</li>
+                </ul>
+                <div class="formula">
+                    Mass of A / Mass of B = (n_A × atomic mass_A) / (n_B × atomic mass_B) = constant
+                </div>
+
+                <h3>4. Ideal Gas Law</h3>
+                <h4>Statement</h4>
+                <p>The ideal gas law combines Boyle's law, Charles's law, and Avogadro's law into a single equation that relates pressure, volume, temperature, and number of moles of a gas.</p>
+
+                <h4>Mathematical Expression</h4>
+                <div class="formula">
+                    PV = nRT
+                </div>
+                <p>Where:</p>
+                <ul>
+                    <li>P = pressure (atm)</li>
+                    <li>V = volume (L)</li>
+                    <li>n = number of moles</li>
+                    <li>R = gas constant (0.0821 L·atm·mol⁻¹·K⁻¹)</li>
+                    <li>T = temperature (K)</li>
+                </ul>
+
+                <h4>Derivation</h4>
+                <p>The ideal gas law is derived by combining the individual gas laws:</p>
+                <ul>
+                    <li><strong>Boyle's Law:</strong> V ∝ 1/P (at constant T, n)</li>
+                    <li><strong>Charles's Law:</strong> V ∝ T (at constant P, n)</li>
+                    <li><strong>Avogadro's Law:</strong> V ∝ n (at constant T, P)</li>
+                </ul>
+                <p>Combining these: V ∝ nT/P</p>
+                <div class="formula">
+                    V = (nRT)/P<br>
+                    PV = nRT
+                </div>
+
+                <h4>Applications</h4>
+                <ul>
+                    <li>Calculation of molar mass of gases</li>
+                    <li>Determination of density of gases</li>
+                    <li>Solving gas stoichiometry problems</li>
+                    <li>Understanding gas behavior under different conditions</li>
+                </ul>
+
+                <h3>Relationship to Mole Concept</h3>
+                <p>These laws form the foundation of the mole concept:</p>
+                <ul>
+                    <li>Avogadro's law establishes the relationship between moles and volume</li>
+                    <li>Gay-Lussac's law helps determine reacting ratios</li>
+                    <li>Law of constant proportion ensures fixed composition</li>
+                    <li>Ideal gas law provides quantitative relationships</li>
+                </ul>
+
+                <h3>Limitations</h3>
+                <ul>
+                    <li>Ideal gas law is only approximate for real gases at high pressures and low temperatures</li>
+                    <li>Avogadro's law assumes ideal gas behavior</li>
+                    <li>These laws don't account for intermolecular forces</li>
+                </ul>
+
+                <h3>Historical Significance</h3>
+                <p>These laws were crucial in the development of modern chemistry:</p>
+                <ul>
+                    <li>Led to the acceptance of atomic theory</li>
+                    <li>Helped determine atomic and molecular weights</li>
+                    <li>Established the foundations of stoichiometry</li>
+                    <li>Contributed to the development of the periodic table</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Chemxplore. All rights reserved. | <a href="../index.html">Back to Home</a></p>
+        </div>
+    </footer>
+</body>
+</html>
