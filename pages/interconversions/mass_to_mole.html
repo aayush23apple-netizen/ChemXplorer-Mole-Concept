@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mass to Moles Calculator - Chemxplore</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../js/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>Chem<span>xplore</span></h1>
+                    <p>Mole Concept</p>
+                </div>
+                <nav>
+                    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+                    <ul>
+                        <li><a href="../../index.html">Home</a></li>
+                        <li><a href="index.html">Interconversions</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="hero">
+                <h2>🔄 Mass to Moles Calculator</h2>
+                <p>Convert mass of a substance to moles using molar mass</p>
+            </div>
+
+            <div class="calculator">
+                <h2>Calculate Moles from Mass</h2>
+                <div class="formula">
+                    moles = mass (g) ÷ molar mass (g/mol)
+                </div>
+
+                <form onsubmit="event.preventDefault(); calculateMassToMole();">
+                    <div class="form-group">
+                        <label for="mass">Mass (grams):</label>
+                        <input type="number" id="mass" step="any" required placeholder="Enter mass in grams">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="molarMass">Molar Mass (g/mol):</label>
+                        <input type="number" id="molarMass" step="any" required placeholder="Enter molar mass">
+                    </div>
+
+                    <button type="submit" class="btn">Calculate Moles</button>
+                </form>
+
+                <div id="result"></div>
+
+                <div class="examples">
+                    <h3>Quick Examples:</h3>
+                    <div class="example-grid">
+                        <div class="example-item">
+                            <strong>18g H₂O</strong><br>
+                            Molar mass: 18 g/mol<br>
+                            Result: 1 mole
+                        </div>
+                        <div class="example-item">
+                            <strong>44g CO₂</strong><br>
+                            Molar mass: 44 g/mol<br>
+                            Result: 1 mole
+                        </div>
+                        <div class="example-item">
+                            <strong>5.8g NaCl</strong><br>
+                            Molar mass: 58.5 g/mol<br>
+                            Result: 0.1 mole
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Chemxplore. All rights reserved. | <a href="../../index.html">Back to Home</a></p>
+        </div>
+    </footer>
+</body>
+</html>
