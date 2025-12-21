@@ -1,1 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Molecular Mass - Chemxplore</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>Chem<span>xplore</span></h1>
+                    <p>Mole Concept</p>
+                </div>
+                <nav>
+                    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="#theory">Theory</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
 
+    <main>
+        <div class="container">
+            <div class="theory-content">
+                <h2>Molecular Mass</h2>
+
+                <h3>Definition</h3>
+                <p>Molecular mass is the sum of the atomic masses of all atoms in a molecule. It is expressed in atomic mass units (u) or daltons (Da). For compounds, molecular mass is numerically equal to the molar mass but expressed in different units.</p>
+
+                <div class="highlight">
+                    <strong>Molecular Mass Formula:</strong> Sum of atomic masses of all constituent atoms
+                </div>
+
+                <h3>Calculation Method</h3>
+                <div class="formula">
+                    Molecular Mass = Σ (number of atoms of each element × atomic mass of each element)
+                </div>
+
+                <h3>Examples</h3>
+                <ul>
+                    <li><strong>Water (H₂O):</strong> (2 × 1.008) + 15.999 = 18.015 u</li>
+                    <li><strong>Carbon Dioxide (CO₂):</strong> 12.011 + (2 × 15.999) = 44.009 u</li>
+                    <li><strong>Glucose (C₆H₁₂O₆):</strong> (6 × 12.011) + (12 × 1.008) + (6 × 15.999) = 180.156 u</li>
+                    <li><strong>Sulfuric Acid (H₂SO₄):</strong> (2 × 1.008) + 32.065 + (4 × 15.999) = 98.078 u</li>
+                </ul>
+
+                <h3>Relationship to Molar Mass</h3>
+                <p>Molecular mass and molar mass are numerically equal but have different units:</p>
+                <ul>
+                    <li>Molecular mass: expressed in u (atomic mass units)</li>
+                    <li>Molar mass: expressed in g/mol (grams per mole)</li>
+                </ul>
+                <div class="highlight">
+                    <strong>Example:</strong> Molecular mass of water = 18.015 u<br>
+                    Molar mass of water = 18.015 g/mol
+                </div>
+
+                <h3>Determination Methods</h3>
+                <p>Molecular mass can be determined through:</p>
+                <ul>
+                    <li><strong>Chemical formula analysis:</strong> Sum of atomic masses</li>
+                    <li><strong>Mass spectrometry:</strong> Direct measurement of molecular ions</li>
+                    <li><strong>Colligative properties:</strong> Freezing point depression, boiling point elevation</li>
+                    <li><strong>Vapor density method:</strong> Comparison with known gas densities</li>
+                    <li><strong>Dumas method:</strong> For volatile compounds</li>
+                </ul>
+
+                <h3>Molecular Mass vs Formula Mass</h3>
+                <table style="width: 100%; border-collapse: collapse; margin: 1rem 0;">
+                    <tr style="background: #f8f9fa;">
+                        <th style="border: 1px solid #ddd; padding: 0.5rem;">Aspect</th>
+                        <th style="border: 1px solid #ddd; padding: 0.5rem;">Molecular Mass</th>
+                        <th style="border: 1px solid #ddd; padding: 0.5rem;">Formula Mass</th>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid #ddd; padding: 0.5rem;">Applies to</td>
+                        <td style="border: 1px solid #ddd; padding: 0.5rem;">Molecular compounds</td>
+                        <td style="border: 1px solid #ddd; padding: 0.5rem;">Ionic compounds</td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid #ddd; padding: 0.5rem;">Based on</td>
+                        <td style="border: 1px solid #ddd; padding: 0.5rem;">Actual molecules</td>
+                        <td style="border: 1px solid #ddd; padding: 0.5rem;">Formula units</td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid #ddd; padding: 0.5rem;">Example</td>
+                        <td style="border: 1px solid #ddd; padding: 0.5rem;">H₂O, CO₂</td>
+                        <td style="border: 1px solid #ddd; padding: 0.5rem;">NaCl, CaCl₂</td>
+                    </tr>
+                </table>
+
+                <h3>Applications</h3>
+                <ul>
+                    <li>Calculation of molar masses for stoichiometric calculations</li>
+                    <li>Determination of empirical and molecular formulas</li>
+                    <li>Gas density calculations</li>
+                    <li>Colligative property calculations</li>
+                    <li>Mass spectrometry analysis</li>
+                </ul>
+
+                <h3>Important Considerations</h3>
+                <ul>
+                    <li>Use the most abundant isotopes for atomic masses</li>
+                    <li>Be careful with polyatomic ions (treat as single units)</li>
+                    <li>Round to appropriate significant figures</li>
+                    <li>Consider isotopic variations for precise work</li>
+                </ul>
+
+                <h3>Common Mistakes</h3>
+                <ul>
+                    <li>Confusing molecular mass with molar mass</li>
+                    <li>Forgetting to multiply by the number of atoms</li>
+                    <li>Using wrong atomic masses</li>
+                    <li>Not considering water of crystallization in hydrated salts</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Chemxplore. All rights reserved. | <a href="../index.html">Back to Home</a></p>
+        </div>
+    </footer>
+</body>
+</html>
