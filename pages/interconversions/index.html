@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interconversions - Chemxplore</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../js/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>Chem<span>xplore</span></h1>
+                    <p>Mole Concept</p>
+                </div>
+                <nav>
+                    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+                    <ul>
+                        <li><a href="../../index.html">Home</a></li>
+                        <li><a href="#calculators">Calculators</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="theory-content">
+                <h2>Interconversions</h2>
+                <p>Interconversions involve converting between different units of measurement in chemistry. These calculators help you convert between mass, moles, particles, volume, and molarity using the mole concept relationships.</p>
+
+                <div class="highlight">
+                    <strong>Key Relationships:</strong><br>
+                    • 1 mole = 6.022 × 10²³ particles (Avogadro's number)<br>
+                    • 1 mole of gas = 22.4 L at STP<br>
+                    • Moles = Mass ÷ Molar Mass<br>
+                    • Molarity = Moles ÷ Volume (in L)
+                </div>
+            </div>
+
+            <section id="calculators" class="section-grid">
+                <div class="card">
+                    <h3>Mass ↔ Moles</h3>
+                    <p>Convert between mass and moles using molar mass.</p>
+                    <ul>
+                        <li><a href="mass_to_mole.html">Mass to Moles</a></li>
+                        <li><a href="moles_to_mass.html">Moles to Mass</a></li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h3>Moles ↔ Particles</h3>
+                    <p>Convert between moles and number of particles using Avogadro's number.</p>
+                    <ul>
+                        <li><a href="moles_to_particles.html">Moles to Particles</a></li>
+                        <li><a href="particles_to_moles.html">Particles to Moles</a></li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h3>Moles ↔ Volume</h3>
+                    <p>Convert between moles and volume for gases at STP.</p>
+                    <ul>
+                        <li><a href="moles_to_volume.html">Moles to Volume</a></li>
+                        <li><a href="volume_to_moles.html">Volume to Moles</a></li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h3>Moles ↔ Molarity</h3>
+                    <p>Convert between moles and molarity using solution volume.</p>
+                    <ul>
+                        <li><a href="moles_to_molarity.html">Moles to Molarity</a></li>
+                        <li><a href="molarity_to_moles.html">Molarity to Moles</a></li>
+                    </ul>
+                </div>
+            </section>
+
+            <div class="theory-content">
+                <h3>How to Use the Calculators</h3>
+                <ol>
+                    <li>Select the appropriate calculator based on what you want to convert</li>
+                    <li>Enter the known values in the input fields</li>
+                    <li>Click the "Calculate" button to get the result</li>
+                    <li>Results are displayed with appropriate units</li>
+                </ol>
+
+                <h3>Important Notes</h3>
+                <ul>
+                    <li>All volume conversions assume STP conditions (0°C, 1 atm) unless otherwise specified</li>
+                    <li>Use atomic/molecular masses from the periodic table for calculations</li>
+                    <li>Be careful with units - convert to consistent units before calculating</li>
+                    <li>For ionic compounds, use formula mass instead of molecular mass</li>
+                </ul>
+
+                <h3>Common Conversion Factors</h3>
+                <div class="highlight">
+                    <table style="width: 100%; border-collapse: collapse;">
+                        <tr>
+                            <th style="border: 1px solid #ddd; padding: 0.5rem;">Conversion</th>
+                            <th style="border: 1px solid #ddd; padding: 0.5rem;">Factor</th>
+                            <th style="border: 1px solid #ddd; padding: 0.5rem;">Example</th>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #ddd; padding: 0.5rem;">Mass to Moles</td>
+                            <td style="border: 1px solid #ddd; padding: 0.5rem;">moles = mass ÷ molar mass</td>
+                            <td style="border: 1px solid #ddd; padding: 0.5rem;">18g H₂O = 1 mole H₂O</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #ddd; padding: 0.5rem;">Moles to Particles</td>
+                            <td style="border: 1px solid #ddd; padding: 0.5rem;">particles = moles × 6.022×10²³</td>
+                            <td style="border: 1px solid #ddd; padding: 0.5rem;">1 mole = 6.022×10²³ particles</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #ddd; padding: 0.5rem;">Moles to Volume</td>
+                            <td style="border: 1px solid #ddd; padding: 0.5rem;">volume = moles × 22.4 L</td>
+                            <td style="border: 1px solid #ddd; padding: 0.5rem;">1 mole gas = 22.4 L</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #ddd; padding: 0.5rem;">Moles to Molarity</td>
+                            <td style="border: 1px solid #ddd; padding: 0.5rem;">M = moles ÷ volume (L)</td>
+                            <td style="border: 1px solid #ddd; padding: 0.5rem;">1 mole in 1L = 1M</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Chemxplore. All rights reserved. | <a href="../../index.html">Back to Home</a></p>
+        </div>
+    </footer>
+</body>
+</html>
