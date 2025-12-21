@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moles to Volume Calculator - Chemxplore</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../js/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>Chem<span>xplore</span></h1>
+                    <p>Mole Concept</p>
+                </div>
+                <nav>
+                    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+                    <ul>
+                        <li><a href="../../index.html">Home</a></li>
+                        <li><a href="index.html">Interconversions</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="theory-content">
+                <h2>Moles to Volume Calculator</h2>
+                <p>This calculator converts moles to volume for gases at STP using the molar volume: <strong>volume = moles × 22.4 L</strong></p>
+
+                <h3>How it works:</h3>
+                <ol>
+                    <li>Enter the number of moles of gas</li>
+                    <li>The calculator multiplies by the molar volume at STP</li>
+                    <li>Result shows the volume in liters</li>
+                </ol>
+
+                <div class="formula">
+                    Volume (L) = moles × 22.4 L/mol<br>
+                    (at STP: 0°C and 1 atm)
+                </div>
+            </div>
+
+            <div class="calculator">
+                <h2>Calculate Volume from Moles</h2>
+
+                <form onsubmit="event.preventDefault(); calculateMolesToVolume();">
+                    <div class="form-group">
+                        <label for="moles">Moles:</label>
+                        <input type="number" id="moles" step="any" required placeholder="Enter number of moles">
+                    </div>
+
+                    <button type="submit" class="btn">Calculate Volume</button>
+                </form>
+
+                <div id="result"></div>
+            </div>
+
+            <div class="theory-content">
+                <h3>Examples</h3>
+                <ul>
+                    <li><strong>Example 1:</strong> Calculate volume of 1 mole of any gas at STP<br>
+                        volume = 1 × 22.4 = 22.4 liters</li>
+                    <li><strong>Example 2:</strong> Calculate volume of 0.5 moles of O₂ at STP<br>
+                        volume = 0.5 × 22.4 = 11.2 liters</li>
+                    <li><strong>Example 3:</strong> Calculate volume of 2 moles of CO₂ at STP<br>
+                        volume = 2 × 22.4 = 44.8 liters</li>
+                </ul>
+
+                <h3>Important Notes</h3>
+                <ul>
+                    <li>This applies only to gases at STP (Standard Temperature and Pressure)</li>
+                    <li>STP conditions: 0°C (273 K) and 1 atm pressure</li>
+                    <li>All gases occupy 22.4 L per mole at STP (ideal gas behavior)</li>
+                    <li>Not applicable to liquids or solids</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Chemxplore. All rights reserved. | <a href="../../index.html">Back to Home</a></p>
+        </div>
+    </footer>
+</body>
+</html>
