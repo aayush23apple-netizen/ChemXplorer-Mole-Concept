@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chemistry Theory - Chemxplore</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../js/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>Chem<span>xplore</span></h1>
+                    <p>Mole Concept</p>
+                </div>
+                <nav>
+                    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+                    <ul>
+                        <li><a href="../../index.html">Home</a></li>
+                        <li><a href="#theory">Theory</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="hero">
+                <h2>📚 Chemistry Theory</h2>
+                <p>Comprehensive explanations of mole concept fundamentals</p>
+            </div>
+
+            <!-- Search Bar -->
+            <div class="search-container">
+                <input type="text" id="theorySearch" placeholder="Search theory topics..." class="search-input">
+                <button onclick="searchTheory()" class="search-btn">🔍 Search</button>
+            </div>
+
+            <section id="theory" class="section-grid">
+                <div class="card theory-card" data-topic="mole">
+                    <h3>🔬 The Mole Concept</h3>
+                    <p>Fundamental unit for measuring chemical amounts</p>
+                    <a href="../mole.html" class="theory-link">Read Theory</a>
+                </div>
+
+                <div class="card theory-card" data-topic="avogadro">
+                    <h3>⚛️ Avogadro's Number</h3>
+                    <p>6.022 × 10²³ particles per mole</p>
+                    <a href="../avogadro.html" class="theory-link">Read Theory</a>
+                </div>
+
+                <div class="card theory-card" data-topic="molar mass">
+                    <h3>⚖️ Molar Mass</h3>
+                    <p>Mass of one mole of substance</p>
+                    <a href="../molar_mass.html" class="theory-link">Read Theory</a>
+                </div>
+
+                <div class="card theory-card" data-topic="atomic mass">
+                    <h3>🧬 Atomic Mass</h3>
+                    <p>Mass of individual atoms</p>
+                    <a href="../atomic_mass.html" class="theory-link">Read Theory</a>
+                </div>
+
+                <div class="card theory-card" data-topic="molecular mass">
+                    <h3>🧪 Molecular Mass</h3>
+                    <p>Mass of molecular compounds</p>
+                    <a href="../molecular_mass.html" class="theory-link">Read Theory</a>
+                </div>
+
+                <div class="card theory-card" data-topic="formula unit">
+                    <h3>🔗 Formula Unit</h3>
+                    <p>Simplest ratio in ionic compounds</p>
+                    <a href="../formula_unit.html" class="theory-link">Read Theory</a>
+                </div>
+
+                <div class="card theory-card" data-topic="laws">
+                    <h3>📏 Laws of Mole Concept</h3>
+                    <p>Fundamental chemical laws and derivations</p>
+                    <a href="../laws.html" class="theory-link">Read Theory</a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Chemxplore. All rights reserved. | <a href="../../index.html">Back to Home</a></p>
+        </div>
+    </footer>
+
+    <script>
+        function searchTheory() {
+            const searchTerm = document.getElementById('theorySearch').value.toLowerCase();
+            const cards = document.querySelectorAll('.theory-card');
+
+            cards.forEach(card => {
+                const topic = card.getAttribute('data-topic').toLowerCase();
+                const title = card.querySelector('h3').textContent.toLowerCase();
+                const description = card.querySelector('p').textContent.toLowerCase();
+
+                if (topic.includes(searchTerm) || title.includes(searchTerm) || description.includes(searchTerm)) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        // Real-time search
+        document.getElementById('theorySearch').addEventListener('input', searchTheory);
+    </script>
+</body>
+</html>
