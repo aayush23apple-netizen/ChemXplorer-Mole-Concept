@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Particles to Moles Calculator - Chemxplore</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../js/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>Chem<span>xplore</span></h1>
+                    <p>Mole Concept</p>
+                </div>
+                <nav>
+                    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+                    <ul>
+                        <li><a href="../../index.html">Home</a></li>
+                        <li><a href="index.html">Interconversions</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="theory-content">
+                <h2>Particles to Moles Calculator</h2>
+                <p>This calculator converts number of particles to moles using Avogadro's number: <strong>moles = particles ÷ 6.022 × 10²³</strong></p>
+
+                <h3>How it works:</h3>
+                <ol>
+                    <li>Enter the number of particles (atoms, molecules, or ions)</li>
+                    <li>The calculator divides by Avogadro's number</li>
+                    <li>Result shows the number of moles</li>
+                </ol>
+
+                <div class="formula">
+                    moles = Number of particles ÷ N_A<br>
+                    N_A = 6.022 × 10²³ mol⁻¹
+                </div>
+            </div>
+
+            <div class="calculator">
+                <h2>Calculate Moles from Particles</h2>
+
+                <form onsubmit="event.preventDefault(); calculateParticlesToMoles();">
+                    <div class="form-group">
+                        <label for="particles">Number of Particles:</label>
+                        <input type="number" id="particles" step="any" required placeholder="Enter number of particles">
+                    </div>
+
+                    <button type="submit" class="btn">Calculate Moles</button>
+                </form>
+
+                <div id="result"></div>
+            </div>
+
+            <div class="theory-content">
+                <h3>Examples</h3>
+                <ul>
+                    <li><strong>Example 1:</strong> Calculate moles in 6.022 × 10²³ water molecules<br>
+                        moles = 6.022 × 10²³ ÷ 6.022 × 10²³ = 1 mole</li>
+                    <li><strong>Example 2:</strong> Calculate moles in 3.011 × 10²³ carbon atoms<br>
+                        moles = 3.011 × 10²³ ÷ 6.022 × 10²³ = 0.5 moles</li>
+                    <li><strong>Example 3:</strong> Calculate moles in 1.204 × 10²⁴ Na⁺ ions<br>
+                        moles = 1.204 × 10²⁴ ÷ 6.022 × 10²³ = 2 moles</li>
+                </ul>
+
+                <h3>Tips</h3>
+                <ul>
+                    <li>Avogadro's number of particles = 1 mole</li>
+                    <li>Use scientific notation for large numbers</li>
+                    <li>Be careful with the type of particles (atoms, molecules, ions)</li>
+                    <li>For ionic compounds, count total ions of all types</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Chemxplore. All rights reserved. | <a href="../../index.html">Back to Home</a></p>
+        </div>
+    </footer>
+</body>
+</html>
